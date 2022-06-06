@@ -40,7 +40,7 @@ Write a function that retrieves an element from a list like in C.
 * You are not allowed to import any module
 * You are not allowed to use try/except
 
-'''
+```
 guillaume@ubuntu:~/0x03$ cat 1-main.py
 #!/usr/bin/python3
 element_at = __import__('1-element_at').element_at
@@ -53,4 +53,4 @@ guillaume@ubuntu:~/0x03$ ./1-main.py
 Element at index 3 is 4
 guillaume@ubuntu:~/0x03$
 
-'''
+```
