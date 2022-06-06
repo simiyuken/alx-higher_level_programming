@@ -1,7 +1,3 @@
-#include <object.h>
-
-#include <listobject.h>
-
 #include <Python.h>
 
 /**
