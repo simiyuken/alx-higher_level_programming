@@ -12,7 +12,7 @@
 
 # Tasks
 
-## Safe list printing
+## 0. Safe list printing
 
 Write a function that prints `x` elements of a list.
 * Prototype: `def safe_print_list(my_list=[], x=0):`
@@ -48,7 +48,7 @@ nb_print: 5
 guillaume@ubuntu:~/0x05$
 
 ```
-## Safe printing of an integers list
+## 1. Safe printing of an integers list
 
 Write a function that prints an integer with `"{:d}".format()`.
 
@@ -88,7 +88,7 @@ guillaume@ubuntu:~/0x05$ ./1-main.py
 School is not an integer
 guillaume@ubuntu:~/0x05$
 ```
-## Print and count integers
+## 2. Print and count integers
 
 Write a function that prints the first `x` elements of a list and only integers.
 
