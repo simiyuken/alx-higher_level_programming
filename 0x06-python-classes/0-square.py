@@ -6,5 +6,5 @@ The class does not do anything
 """
 
 class Square:
-    #And empty square class with an artribute
+    """ And empty square class with an artribute"""
     pass
