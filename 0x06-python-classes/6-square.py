@@ -41,7 +41,7 @@ class Square:
                 for j in range(self.__size):
                     print("#", end="")
                 print("")
-            else:
+        else:
             print("")
 
     """ Getter Position """
