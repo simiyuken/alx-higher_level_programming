@@ -1,24 +1,14 @@
 #!/usr/bin/python3
 
-"""Square Class
-
-A Square Class from task zero worked on
-
-"""
+"""defining a square and its size"""
 
 
 class Square:
 
-    def __init__(self, size):
+    """implementing a square"""
 
-        """__init__
+    def __init__(self, size=0):
 
-        #The __init__ method initializes the size value
-        of the square.
-
-       # Attributes:
-            size (int): The size of the square.
-
-        """
+        """initializing new square with the size argument"""
 
         self.__size = size
