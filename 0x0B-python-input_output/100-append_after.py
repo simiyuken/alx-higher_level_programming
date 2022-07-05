@@ -3,11 +3,17 @@
 
 
 def append_after(filename="", search_string="", new_string=""):
-    """ inserts a line of text to a file"""
-    with open(filename, 'r', encoding='utf-8') as f:
-        wi = f.readlines()
-    with open(filename, "w", encoding="utf-8") as f:
-        for a in wi:
-            f.write(a)
-            if (search_string in a):
-                f.write(new_string)
+    """Insert text after each line containing a given string in a file.
+    Args:
+        filename (str): The name of the file.
+        search_string (str): The string to search for within the file.
+        new_string (str): The string to insert.
+    """
+    text = ""
+    with open(filename) as r:
+        for line in r:
+            text += line
+            if search_string in line:
+                text += new_string
+    with open(filename, "w") as w:
+        w.write(text)
