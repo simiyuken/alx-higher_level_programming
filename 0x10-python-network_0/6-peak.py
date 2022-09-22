@@ -5,6 +5,7 @@ it is NOT smaller than its neighbors.
 For corner elements, we need to consider only one neighbor.
 """
 
+
 def find_peak(A):
     """find pick element"""
     if A == []:
@@ -14,7 +15,8 @@ def find_peak(A):
         """helper recursive function"""
 
         mid = (left + right) // 2
-       # check if the middle element is greater than its neighbors
+
+        # check if the middle element is greater than its neighbors
         if ((mid == 0 or A[mid - 1] <= A[mid]) and
                 (mid == len(A) - 1 or A[mid + 1] <= A[mid])):
             return A[mid]
@@ -27,4 +29,5 @@ def find_peak(A):
         # If the right neighbor of `mid` is greater than the middle element,
         # find the peak recursively in the right sublist
         return recursive(A, mid + 1, right)
+
     return recursive(A)
